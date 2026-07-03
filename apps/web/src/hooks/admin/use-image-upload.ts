@@ -4,7 +4,7 @@
 import { useState } from 'react'
 import { supabaseClient } from '@/lib/supabase'
 
-const BUCKET_NAME = 'products'
+const BUCKET_NAME = 'images'
 const FOLDER_NAME = 'products'
 
 interface UseImageUploadOptions {

@@ -6,7 +6,8 @@ import { COMPANY, CONTACT } from '@amap-togo/utils'
 
 // Fonction locale pour formater les prix (evite les problemes d'encodage)
 function formatPricePDF(amount: number): string {
-  return `${amount.toLocaleString('fr-FR')} FCFA`
+  const formatted = amount.toLocaleString('fr-FR').replace(/[\u202f\u00a0]/g, ' ')
+  return `${formatted} FCFA`
 }
 
 export interface FactureItem {
