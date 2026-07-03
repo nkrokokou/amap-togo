@@ -102,6 +102,10 @@ export default async function ActualitePage({ params }: ActualitePageProps) {
             prose-strong:text-white
             prose-ul:text-gray-300 prose-ol:text-gray-300
             prose-img:rounded-xl prose-img:shadow-2xl
+            text-gray-300 leading-relaxed
+            [&_h1]:text-white [&_h2]:text-white [&_h3]:text-white [&_h4]:text-white 
+            [&_p]:text-gray-300 [&_a]:text-green-400 hover:[&_a]:text-green-300 
+            [&_strong]:text-white [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5
           "
                     dangerouslySetInnerHTML={{ __html: article.contenu.replace(/\n/g, '<br />') }}
                 />
